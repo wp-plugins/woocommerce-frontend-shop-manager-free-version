@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 The ultimate tool for managing WooCommerce shops, right at the frontend, featuring live product editing and full vendor support! - Mihajlovicnenad.com
 
 == Description ==
-The ultimate tool for managing WooCommerce shops, right at the frontend, featuring live product editing! It has never been this easy to manage a professional online store! WooCommerce Frontend Shop Manager integrates itself all over your shops frontend and adds the live editing product functionality. It supports product archives, single products, and even the shortcodes! All Wordpress templates are supported by default. This tool will improve your shop, and will save you a lot of time spent on managing your products. Well, WooCommerce just got better! Get up to 50% more time for you life! Check the demo at this link http://mihajlovicnenad.com/frontend-shop-manager/?post_type=product
+The ultimate tool for managing WooCommerce shops, right at the frontend, featuring live product editing! It has never been this easy to manage a professional online store! WooCommerce Frontend Shop Manager integrates itself all over your shops frontend and adds the live editing product functionality. It supports product archives, single products, and even the shortcodes! All Wordpress templates are supported by default. This tool will improve your shop, and will save you a lot of time spent on managing your products. Well, WooCommerce just got better! Get up to 50% more time for you life! Check the demo at this link http://mihajlovicnenad.com/frontend-shop-manager/
 
 Now you can easily edit your products from your shops frontend thanks to the WooCommerce Frontend Shop Manager plugin. Change prices, manage stock, even add taxonomy terms, categories and attributes or just add some new images to the product gallery. All live editing, directly from the site archives, single product pages, or even shortcodes. Works with EVERY template! Guaranteed!
 
@@ -34,7 +34,7 @@ These options are already integrated. WooCommerce Frontend Shop Manager updates 
 - Creating Simple, Grouped, External/Affiliate Products from the Frontend! v2.0
 - Cloning and Deleting Products v2.0
 - Managing Variations, Creating, Deleting v2.0
-- Full Vendor Support! – Vendor Editing Restriction Groups v2.0
+- Full Vendor Support! Vendor Editing Restriction Groups v2.0
 - Product Content and Description v2.0
 - Simple, Variable, External/Affiliate and Grouped Products Support!
 - Product Name
@@ -72,7 +72,7 @@ A QUICK VIDEO GUIDE IS AVAILABLE HERE @ https://www.youtube.com/watch?v=8b4cLdiY
 
 
 == Frequently Asked Questions ==
-Where can I get the WooCommerce Frontend Shop Manager plugin?
+* Where can I get the WooCommerce Frontend Shop Manager plugin?
 You can get the Premium version at this link http://bit.ly/1EaU8Y5
 
 == Screenshots ==
