@@ -73,6 +73,7 @@ A QUICK VIDEO GUIDE IS AVAILABLE HERE @ https://www.youtube.com/watch?v=8b4cLdiY
 
 == Frequently Asked Questions ==
 * Where can I get the WooCommerce Frontend Shop Manager plugin?
+
 You can get the Premium version at this link http://bit.ly/1EaU8Y5
 
 == Screenshots ==
