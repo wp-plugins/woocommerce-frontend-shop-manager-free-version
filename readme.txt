@@ -3,7 +3,7 @@ Contributors: dzeriho
 Tags: e-commerce, ecommerce, frontend, ipad woocommerce, iphone woocommerce, live editor, live product editor, live shop manager, product, product editor, shop manager, tabled product editor, woocommerce, woocommerce live manager
 Donate link: http://www.mihajlovicnenad.com
 Requires at least: 3.5
-Tested up to: 4.2
+Tested up to: 4.2.2
 Stable tag: 1.0.0
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
