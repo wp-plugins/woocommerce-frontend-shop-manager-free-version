@@ -4,7 +4,7 @@ Plugin Name: WooCommerce Frontend Shop Manager - Free Version
 Plugin URI: http://www.mihajlovicnenad.com/woocommerce-frontend-shop-manager
 Description:  WooCommerce Frontend Shop Manager! The ultimate tool for managing WooCommerce shops, right at the frontend, featuring live product editing and vendor support! For WooCommerce Frontend Shop Manager Premuim visit mihajlovicnenad.com
 Author: Mihajlovic Nenad
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://www.mihajlovicnenad.com
 */
 
@@ -14,6 +14,7 @@ class WC_Frontnend_Shop_Manager_Free {
 
 	public static $path;
 	public static $url_path;
+	public static $settings;
 
 	public static function init() {
 		$class = __CLASS__;
@@ -28,6 +29,13 @@ class WC_Frontnend_Shop_Manager_Free {
 
 		self::$path = plugin_dir_path( __FILE__ );
 		self::$url_path = plugins_url( __FILE__ );
+
+		self::$settings['user'] = wp_get_current_user();
+		self::$settings['woocommerce']['decimal_sep'] = get_option( 'woocommerce_price_decimal_sep' );
+
+		if ( self::$settings['user']->has_cap( 'administrator' ) || self::$settings['user']->has_cap( 'manage_woocommerce' ) ) {
+			self::$settings['admin_mode'] = true;
+		}
 
 		add_action( 'init', array(&$this, 'wfsm_textdomain') );
 		add_action( 'wp_enqueue_scripts', array(&$this, 'wfsm_scripts') );
