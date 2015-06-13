@@ -13,6 +13,8 @@ The ultimate tool for managing WooCommerce shops, right at the frontend, featuri
 == Description ==
 The ultimate tool for managing WooCommerce shops, right at the frontend, featuring live product editing! It has never been this easy to manage a professional online store! WooCommerce Frontend Shop Manager integrates itself all over your shops frontend and adds the live editing product functionality. It supports product archives, single products, and even the shortcodes! All Wordpress templates are supported by default. This tool will improve your shop, and will save you a lot of time spent on managing your products. Well, WooCommerce just got better! Get up to 50% more time for you life! Check the demo at this link http://mihajlovicnenad.com/frontend-shop-manager/
 
+GET PREMIUM VERSION HERE http://bit.ly/1EaU8Y5
+
 Now you can easily edit your products from your shops frontend thanks to the WooCommerce Frontend Shop Manager plugin. Change prices, manage stock, even add taxonomy terms, categories and attributes or just add some new images to the product gallery. All live editing, directly from the site archives, single product pages, or even shortcodes. Works with EVERY template! Guaranteed!
 
 * PRODUCT EDITING FOR TABLETS, HANDHELD, PHONE AND SMALL SCREEN DEVICES!
@@ -64,6 +66,8 @@ Plugin is compatible with any theme. WooCommerce just got better!
 
 A QUICK VIDEO GUIDE IS AVAILABLE HERE @ https://www.youtube.com/watch?v=8b4cLdiYqiE
 
+GET PREMIUM VERSION HERE http://bit.ly/1EaU8Y5
+
 == Installation ==
 1. Navigate to Plugins>Add New and choose upload
 2. Choose the woocommerce-frontend-shop-manager-free-version.zip archive and click upload
@@ -72,7 +76,7 @@ A QUICK VIDEO GUIDE IS AVAILABLE HERE @ https://www.youtube.com/watch?v=8b4cLdiY
 
 
 == Frequently Asked Questions ==
-* Where can I get the WooCommerce Frontend Shop Manager plugin?
+* Where can I get the WooCommerce Frontend Shop Manager premium version?
 
 You can get the Premium version at this link http://bit.ly/1EaU8Y5
 
