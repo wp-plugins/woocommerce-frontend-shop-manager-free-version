@@ -4,7 +4,7 @@ Plugin Name: WooCommerce Frontend Shop Manager - Free Version
 Plugin URI: http://www.mihajlovicnenad.com/woocommerce-frontend-shop-manager
 Description:  WooCommerce Frontend Shop Manager! The ultimate tool for managing WooCommerce shops, right at the frontend, featuring live product editing and vendor support! For WooCommerce Frontend Shop Manager Premuim visit mihajlovicnenad.com
 Author: Mihajlovic Nenad
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://www.mihajlovicnenad.com
 */
 
@@ -79,7 +79,7 @@ class WC_Frontnend_Shop_Manager_Free {
 
 		$curr_id = $post->ID;
 
-		if ( !current_user_can( 'edit_product', array( 'ID' => $curr_id ) ) ) {
+		if ( !isset( self::$settings['admin_mode'] ) && absint( $post->post_author ) !== self::$settings['user']->ID ) {
 			return;
 		}
 
@@ -122,9 +122,9 @@ class WC_Frontnend_Shop_Manager_Free {
 			exit;
 		}
 
-		$curr_post_author = absint( get_post_field( 'post_author', $curr_post_id ) );
+		$curr_post_author = self::wfsm_check_premissions( $curr_post_id );
 
-		if ( !current_user_can( 'edit_product', array( 'ID' => $curr_post_id ) ) || ( !isset( self::$settings['admin_mode'] ) && $curr_post_author !== self::$settings['user']->ID ) ) {
+		if ( $curr_post_author === false ) {
 			die( 'Error!' );
 			exit;
 		}
@@ -271,7 +271,7 @@ class WC_Frontnend_Shop_Manager_Free {
 
 
 							window.wfsm_frame = wp.media({
-								title: '<?php _e('Set Featured Image','wfsm'); ?>',
+								title: '<?php echo esc_attr( __('Set Featured Image','wfsm') ); ?>',
 								button: {
 									text: el.data("update"),
 									close: false
@@ -355,9 +355,9 @@ class WC_Frontnend_Shop_Manager_Free {
 			exit;
 		}
 
-		$curr_post_author = absint( get_post_field( 'post_author', $curr_post_id ) );
+		$curr_post_author = self::wfsm_check_premissions( $curr_post_id );
 
-		if ( !current_user_can( 'edit_product', array( 'ID' => $curr_post_id ) ) || ( !isset( self::$settings['admin_mode'] ) && $curr_post_author !== self::$settings['user']->ID ) ) {
+		if ( $curr_post_author === false ) {
 			die( 'Error!' );
 			exit;
 		}
@@ -459,6 +459,27 @@ class WC_Frontnend_Shop_Manager_Free {
 
 		die($out);
 		exit;
+	}
+
+	public static function wfsm_check_premissions( $curr_post_id ) {
+
+		$curr_post_author = absint( get_post_field( 'post_author', $curr_post_id ) );
+
+		$curr_logged_user = get_current_user_id();
+
+		$curr_user = get_user_by( 'id', $curr_logged_user );
+
+		if ( $curr_user->has_cap( 'administrator' ) || $curr_user->has_cap( 'manage_woocommerce' ) ) {
+			$curr_admin = true;
+		}
+
+		if ( !isset( $curr_admin ) && absint( $curr_post_author ) !== $curr_logged_user ) {
+			return false;
+		}
+		else {
+			return $curr_post_author;
+		}
+
 	}
 
 }
