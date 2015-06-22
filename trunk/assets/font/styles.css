@@ -12,16 +12,11 @@
 
 }
 
-[data-icon]:before {
-  font-family: "wfsm" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'wfsm';
+		src: url('fonts/wfsm.svg#wfsm') format('svg');
+	}
 }
 
 [class^="wfsmico-"]:before,

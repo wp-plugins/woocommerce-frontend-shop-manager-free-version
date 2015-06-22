@@ -67,6 +67,15 @@ body.wfsm-active .ui-datepicker {
 [Buttons]
 -------------------------------------------------------------------*/
 
+.wfsm-buttons,
+.wfsm-buttons * {
+	box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+	-ms-box-sizing:content-box;
+	-o-box-sizing:content-box;
+}
+
 .single.single-product .wfsm-buttons {
 	left:3px;
 	right:auto;
